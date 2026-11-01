@@ -25,3 +25,10 @@ Then open <http://localhost:8000>.
 PaperOS is a proprietary NIFA product and will not be released as open-source
 software. Product features and availability are described on its product page
 as they are confirmed.
+
+## Deploy with Cloudflare
+
+This is configured as a Workers Static Assets site. In Cloudflare Workers
+Builds, use `/` as the root directory, leave the build command empty, and use
+`npx wrangler deploy` as the deploy command. The root `wrangler.jsonc` file
+publishes the static site files.
